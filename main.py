@@ -79,7 +79,7 @@ def main():
             pygame.time.wait(10)
 
             # Check if the time difference is 60 seconds then game will stop.
-            if timer - time.time() == 60:
+            if time.time() - timer >= 60:
                 running = False
     
     pygame.quit()
